@@ -15,6 +15,31 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.container-flex > * {
+    flex-basis: 10%;
+}
+
+/* 
+    DEBUG
+*/
+.debug .container-flex {
+    background-color: beige;
+    border: 1px dashed blue;
+}
+
+.debug .container-flex > * {
+    background-color: lightcoral;
+    border: 1px dashed aquamarine;
 }
